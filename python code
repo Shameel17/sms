@@ -1,0 +1,22 @@
+import turtle
+paper = turtle.Screen()
+pen = turtle.Turtle()
+
+cont = True
+while cont:
+    a = int(input("how many sides do you want: "))
+    b = 360/a
+    mycolor = []
+    for s in range(a):
+        colour = input("what color do you want: ")
+        mycolor.append(colour)
+    for i in range(a):
+        pen.color(mycolor[i])
+        pen.fd(100)
+        pen.right(b)
+    ques = input("do you want to continue: ")
+    if ques == "yes":
+        a
+    else:
+        print("goodbye")
+        cont = False
